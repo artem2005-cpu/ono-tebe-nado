@@ -65,6 +65,7 @@ a .header__link {
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
   background-color: #fff;
   display: flex;
@@ -132,7 +133,7 @@ a .header__link {
   line-height: 28px;
   text-transform: uppercase;
   word-spacing: 18px;
-  margin-right: -40px;
+  margin-right: -32px;
 }
 
 .button-container {

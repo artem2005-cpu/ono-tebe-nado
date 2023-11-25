@@ -6,16 +6,20 @@ body {
 }
 
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  gap: 210px;
   padding: 93px 50px 92px 50px;
   background-color: #fff;
 }
 
 .header__links-list {
-  display: flex;
-  gap: 33px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   list-style: circle;
+  white-space: nowrap;
 }
 
 .header__links-list-item {
@@ -41,7 +45,7 @@ body {
 }
 
 .header__logo {
-  margin: 0px 355px 0px 209px;
+  /* margin: 0px 355px 0px 209px; */
 }
 
 .header__logo-image {
@@ -52,12 +56,14 @@ body {
 }
 
 .header__address {
+  padding-left: 30px;
   color: #000;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 a .header__link {
@@ -81,10 +87,10 @@ a .header__link {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 166px 50px 147px 50px;
+  padding: 166px 50px 120px 50px;
 }
 
-.cover__title h2 {
+.cover__title span {
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -94,27 +100,19 @@ a .header__link {
   text-transform: uppercase;
 }
 
-.aligned-text h2 span {
-  letter-spacing: 60px;
-}
-
 .aligned-text_center {
   line-height: 100%;
   text-align: center;
 }
 
-.aligned-text_center h2 span {
-  letter-spacing: 60px;
-}
-
-.aligned-text_right h2 {
+.aligned-text_right {
   margin-right: -30px;
   line-height: 100%;
   letter-spacing: 30px;
   text-align: right;
 }
 
-.aligned-text_right h2 span {
+.cover__title .span {
   letter-spacing: 60px;
 }
 
@@ -125,7 +123,7 @@ a .header__link {
   justify-content: flex-end;
   align-items: center;
   gap: 79px;
-  margin: -12px 50px 50px 50px;
+  margin: 0px 50px 50px 50px;
   color: #fff;
 }
 
@@ -173,7 +171,7 @@ a .header__link {
 }
 
 .lots__heading {
-  padding: 0px 1179px 27px 40px;
+  padding: 0px 0px 27px 40px;
   color: #000;
   font-weight: 700;
   font-size: 40px;
@@ -195,7 +193,7 @@ a .header__link {
 
 .lots__card-list-item {
   flex-grow: 1;
-  width: 10px;
+  width: 430px;
 }
 
 .card {
@@ -253,7 +251,7 @@ a .header__link {
 
 .lots__look-more-link {
   display: block;
-  padding: 30px 1108px 0px 40px;
+  padding: 30px 0px 0px 40px;
   color: #000;
   font-weight: 400;
   font-size: 20px;
@@ -323,7 +321,7 @@ a .header__link {
 
 .footer {
   display: flex;
-  gap: 356px;
+  justify-content: space-between;
   padding: 0px 50px 90px 50px;
   background-color: #fff;
 }
